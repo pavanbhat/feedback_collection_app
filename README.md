@@ -1,6 +1,6 @@
 # Feedback Collection Application
 
-# Flow of the application -
+Flow of the application -
 
 1. User Sign up using OAuth (Express + MongoDB + PassportJS)
 2. User pays for email credits via stripe (Stripe + MongoDB)
