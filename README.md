@@ -11,9 +11,22 @@ Flow of the application -
 7. We tabulate the feedback (Mongo)
 8. User can see report of all survey responses (MongoDB + React + Redux)
 
-Deployment Checklist:
+Pre - Deployment Checklist:
 
 1. Dynamic Port Binding - Heroku tells us which port to listen to for incoming traffic
-2. Specify Node Environment - 
-3. Specify start script
+2. Specify Node Environment - Add node and npm versions in package.json
+3. Specify start script - add start script in package.json
 4. Create .gitignore file
+
+First time Deployement Checklsit:
+
+1. Create Heroku account
+2. Commit the codebase to git
+3. Install Heroku CLI and create app
+4. Deploy App with git
+5. Heroku deploys project
+
+Subsequent Deployement Checklsit:
+
+1. Commit codebase with git
+2. Deply App with git
