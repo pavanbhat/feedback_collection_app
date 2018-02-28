@@ -3,7 +3,7 @@ const app = express();
 
 // root route handler
 app.get("/", (req, res) => {
-  res.send({ hi: "there" });
+  res.send({ bye: "buddy" });
 });
 
 // Dynamically binds the port based on the underlying environment
