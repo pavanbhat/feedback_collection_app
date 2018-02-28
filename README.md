@@ -23,7 +23,7 @@ First time Deployement Checklsit:
 1. Create Heroku account
 2. Commit the codebase to git
 3. Install Heroku CLI and create app
-4. Deploy App with git
+4. Deploy App with git (Use this: git subtree push --prefix server heroku master)
 5. Heroku deploys project
 
 Subsequent Deployement Checklsit:
