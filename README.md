@@ -10,3 +10,10 @@ Flow of the application -
 6. Surveyees click on link in email to provide feedback (Email Provider + Express + MongoDB)
 7. We tabulate the feedback (Mongo)
 8. User can see report of all survey responses (MongoDB + React + Redux)
+
+Deployment Checklist:
+
+1. Dynamic Port Binding - Heroku tells us which port to listen to for incoming traffic
+2. Specify Node Environment - 
+3. Specify start script
+4. Create .gitignore file
