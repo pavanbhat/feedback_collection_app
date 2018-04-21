@@ -10,26 +10,25 @@ const app = express();
   res.send({ bye: "buddy" });
 }); */
 
-//inform passport of how to make use of the strategy
+//informs passport of how to make use of the strategy
 // Generic register to authenticate user with a very specific service
 passport.use(
-  new googleStrategy(
-    {
-      clientID: keys.googleClientID,
-      clientSecret: keys.googleClientSecret,
-      callbackURL: "/auth/google/callback"
-    },
-    accessToken => {
-      console.log(accessToken);
-    }
-  )
+    new googleStrategy({
+            clientID: keys.googleClientID,
+            clientSecret: keys.googleClientSecret,
+            callbackURL: "/auth/google/callback"
+        },
+        accessToken => {
+            console.log(accessToken);
+        }
+    )
 );
 
 app.get(
-  "/auth/google/",
-  passport.authenticate("google", {
-    scope: ["profile", "email"]
-  })
+    "/auth/google/",
+    passport.authenticate("google", {
+        scope: ["profile", "email"]
+    })
 );
 
 // Dynamically binds the port based on the underlying environment
