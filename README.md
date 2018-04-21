@@ -29,4 +29,21 @@ First time Deployement Checklsit:
 Subsequent Deployement Checklsit:
 
 1. Commit codebase with git
-2. Deply App with git
+2. Deply App with git (Use this: git subtree push --prefix server heroku master)
+
+OAuth Flow:
+
+1. User clicks on the Login (Client)
+2. Forward user's request to Google (Server)
+3. Ask user if they grant permission (Google)
+4. User grants permission (Google)
+5. Put user on hold, take the code from the URL (Server)
+6. Send request to google with code included (Server)
+7. Google sees the code in URL and replies with details about this user (Google)
+8. Get user details, create new record in (Server) 
+
+Passport Library Components:
+
+* passport - General helpers for handling auth in Express apps
+* passport strategy - Helpers for authenticating with one very specific method (email/password, Google, Facebook etc.)
+
